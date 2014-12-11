@@ -4,7 +4,6 @@
     <myCeneter_URLCaseInsensitive>
       <active>true</active>
       <codePool>local</codePool>
-      <depends><Mage_Catalog/></depends>
     </myCeneter_URLCaseInsensitive>
   </modules>
 </config>
