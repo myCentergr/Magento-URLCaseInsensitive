@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <myCeneter_URLCaseInsensitive>
+        <myCenter_URLCaseInsensitive>
             <version>0.1.0</version>
-        </myCeneter_URLCaseInsensitive>
+        </myCenter_URLCaseInsensitive>
     </modules>
+
     <global>
-      <models>
-        <catalog>
-          <rewrite>
-            <category>myCenter_URLCaseInsensitive_Model_Category</category>
-            <url>myCenter_URLCaseInsensitive_Model_Url</url>
-            <product>myCenter_URLCaseInsensitive_Model_Product_Url</product>
-          </rewrite>
-        </catalog>
-      </models>
+        <models>
+            <core>
+                <rewrite>
+                    <rewrite>myCenter_URLCaseInsensitive_Model_Resourse_Url_Rewrite</rewrite>
+                </rewrite>
+            </core>
+        </models>
     </global>
+    
 </config>
