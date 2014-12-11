@@ -1,4 +1,10 @@
 Magento-URLCaseInsensitive
 ==========================
 
-A magento module that overrides the core URL case sensitive functionality
+A magento extension that overrides the core URL case sensitive functionality.
+
+Is an exact implementation of the method described in the following topic
+
+http://www.magentocommerce.com/boards/v/viewthread/308318/#t427238
+
+Thanks to Siggi_Schmitz, ollyb
