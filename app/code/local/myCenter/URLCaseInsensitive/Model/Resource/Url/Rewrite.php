@@ -1,15 +1,22 @@
 <?php
 
-class myCenter_URLCaseInsensitive_Model_Resourse_Url_Rewrite extends Mage_Core_Resourse_Url_Rewrite {
+class myCenter_URLCaseInsensitive_Model_Resource_Url_Rewrite extends Mage_Core_Model_Resource_Url_Rewrite {
   
   public function loadByRequestPath(Mage_Core_Model_Url_Rewrite $object, $path) {
+        
         if (!is_array($path)) {
-            $path = array($path);
+            $path = array(strtolower($path)); //Custom: using strtolower
+        }
+        //Custom: adding else statement
+        else {
+          foreach($path as $key => $val) {
+            $path[$key] = strtolower($val);
+          }
         }
 
         $pathBind = array();
         foreach ($path as $key => $url) {
-            $pathBind['path' . $key] = $url;
+            $pathBind['path' . $key] = strtolower($url); //Custom: using strtolower
         }
         // Form select
         $adapter = $this->_getReadAdapter();
@@ -25,10 +32,10 @@ class myCenter_URLCaseInsensitive_Model_Resourse_Url_Rewrite extends Mage_Core_R
         $currentPenalty = null;
         $foundItem = null;
         foreach ($items as $item) {
-            if (!array_key_exists($item['request_path'], $mapPenalty)) {
+            if (!array_key_exists(strtolower($item['request_path']), $mapPenalty)) { //Custom: using strtolower
                 continue;
             }
-            $penalty = $mapPenalty[$item['request_path']] << 1 + ($item['store_id'] ? 0 : 1);
+            $penalty = $mapPenalty[strtolower($item['request_path'])] << 1 + ($item['store_id'] ? 0 : 1); //Custom: using strtolower
             if (!$foundItem || $currentPenalty > $penalty) {
                 $foundItem = $item;
                 $currentPenalty = $penalty;

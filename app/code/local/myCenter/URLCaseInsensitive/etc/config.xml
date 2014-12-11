@@ -8,11 +8,11 @@
 
     <global>
         <models>
-            <core>
+            <core_resource>
                 <rewrite>
-                    <rewrite>myCenter_URLCaseInsensitive_Model_Resourse_Url_Rewrite</rewrite>
+                    <url_rewrite>myCenter_URLCaseInsensitive_Model_Resource_Url_Rewrite</url_rewrite>
                 </rewrite>
-            </core>
+            </core_resource>
         </models>
     </global>
     
