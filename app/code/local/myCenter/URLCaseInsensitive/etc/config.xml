@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <myCenter_URLCaseInsensitive>
+        <MyCenter_URLCaseInsensitive>
             <version>0.1.0</version>
-        </myCenter_URLCaseInsensitive>
+        </MyCenter_URLCaseInsensitive>
     </modules>
 
     <global>
         <models>
             <core_resource>
                 <rewrite>
-                    <url_rewrite>myCenter_URLCaseInsensitive_Model_Resource_Url_Rewrite</url_rewrite>
+                    <url_rewrite>MyCenter_URLCaseInsensitive_Model_Resource_Url_Rewrite</url_rewrite>
                 </rewrite>
             </core_resource>
         </models>

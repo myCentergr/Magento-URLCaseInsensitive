@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <config>
   <modules>
-    <myCenter_URLCaseInsensitive>
+    <MyCenter_URLCaseInsensitive>
       <active>true</active>
       <codePool>local</codePool>
-    </myCenter_URLCaseInsensitive>
+    </MyCenter_URLCaseInsensitive>
   </modules>
 </config>

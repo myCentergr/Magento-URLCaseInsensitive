@@ -1,6 +1,6 @@
 <?php
 
-class myCenter_URLCaseInsensitive_Model_Resource_Url_Rewrite extends Mage_Core_Model_Resource_Url_Rewrite {
+class MyCenter_URLCaseInsensitive_Model_Resource_Url_Rewrite extends Mage_Core_Model_Resource_Url_Rewrite {
   
   public function loadByRequestPath(Mage_Core_Model_Url_Rewrite $object, $path) {
         
